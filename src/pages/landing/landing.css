@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ekranın tamamını kaplama */
+}
+
+.image1 {
+  width: 100%; /* Görüntünün container'ın genişliğine uyum sağlaması */
+  height: 100%; /* Görüntünün container'ın yüksekliğine uyum sağlaması */
+  position: relative;
+}
+
+.image1 img {
+  width: 100%; /* Görüntünün container'ın genişliğine uyum sağlaması */
+  height: 100%; /* Görüntünün container'ın yüksekliğine uyum sağlaması */
+  object-fit: cover; /* Görüntünün boşluk bırakmadan container'a sığmasını sağlar */
+}
+
+.metin {
+  position: absolute; /* Görüntünün içinde mutlak konumlandırma */
+  top: 50%; /* Yukarıdan yarım container yüksekliği kadar aşağıda */
+  left: 50%; /* Soldan yarım container genişliği kadar sağda */
+  transform: translate(-50%, -50%); /* Metni merkeze hizalamak için */
+  text-align: center; /* Metni ortalamak için */
+  color: white; /* Metin rengi */
+  font-family: Arial, sans-serif; /* Metin fontu */
+  font-size: 84px; /* Metin boyutu */
+}
