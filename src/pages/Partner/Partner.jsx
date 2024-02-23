@@ -2,6 +2,7 @@ import React from "react";
 
 import './Partner.css';
 
+
 function Partner() {
     return (
         <div className="partner">

@@ -1,28 +1,19 @@
-
-
-.rectangle1 {
-    width: 342px;
-    height: 482px;
-    background-color: burlywood;
-    margin: 10px;
-}
-
-.rectangle2 {
-    width: 577px;
-    height: 708px;
-    background-color: rgb(81, 83, 115);
-    margin: 20px;
+.rectangle {
+    margin: 20px; 
+    border-radius: 20px;
 }
 
 .image-container {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
 .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .content {
@@ -31,7 +22,7 @@
 
 .content h2 {
     margin-bottom: 10px;
-    color: blue; /* Başlık rengi */
+    color: blue; 
 }
 
 .content p {
@@ -41,7 +32,7 @@
 .container {
     position: relative;
     display: flex;
-    flex-direction: row; /* İçerikleri yatay olarak sıralar */
+    flex-direction: row; 
     justify-content: space-around;
     align-items: center;
 }
@@ -59,12 +50,12 @@
   }
   
   .left-arrow-button {
-    left: 10px; /* Sol tarafta */
+    left: 10px; 
     color: green;
   }
   
   .right-arrow-button {
-    right: 10px; /* Sağ tarafta */
+    right: 10px; 
     color: green;
   }
   
