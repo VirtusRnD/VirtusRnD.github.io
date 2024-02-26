@@ -22,9 +22,14 @@ export const StyledRow = styled(Row)`
 export const ContentWrapper = styled("div")`
   position: relative;
   max-width: 540px;
-
+  margin: auto;
   @media only screen and (max-width: 575px) {
     padding-top: 4rem;
+  }
+  h6 {
+    font-size: 34px;
+    color: #18216d;
+    font-family: Arial, Helvetica, sans-serif;
   }
 `;
 
@@ -33,12 +38,12 @@ export const ServiceWrapper = styled("div")`
   justify-content: space-between;
   max-width: 100%;
 `;
-
+//text-transform: uppercase;
 export const MinTitle = styled("h6")`
   font-size: 15px;
   line-height: 1rem;
   padding: 0.5rem 0;
-  text-transform: uppercase;
+
   color: #000;
   font-family: "Motiva Sans Light", sans-serif;
 `;

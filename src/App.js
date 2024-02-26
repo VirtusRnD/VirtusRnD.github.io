@@ -17,15 +17,18 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
         <ScrollTop />
+        <Navbar />
+
         <Landing />
         <About />
+        {/*
         <Products2 />
-        <Contact />
         <Partner />
-        <Testpage />
+        */}
 
+        <Testpage />
+        <Contact />
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/landing" element={<Landing />} />

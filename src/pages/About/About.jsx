@@ -1,19 +1,21 @@
-// About.js
-
 import React from "react";
 import "./About.css";
+import ContentBlock from "../../components/ContentBlock/ContentBlock";
+import AboutContent from "./AboutContent.json";
 
 function About() {
     return (
         <div className="about">
-            <div className="about__container">
-                <h1>About Our Company</h1>
-                <p>Welcome to our company! We are dedicated to...</p>
-                <p>...</p>
-                <p>...</p>
-                {/* Add more information about your company */}
-            </div>
+            <ContentBlock
+                direction="left"
+                title={AboutContent.title}
+                content={AboutContent.text}
+                section={AboutContent.section}
+                icon="/graphs.svg"
+                id="about"
+            />
         </div>
     );
 }
+
 export default About;
