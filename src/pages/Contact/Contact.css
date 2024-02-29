@@ -1,0 +1,20 @@
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Yatayda %80 alan kaplasın */
+    margin: 0 auto; /* Yatayda ortala */
+}
+
+.contact__info {
+    width: 100%; /* %80 alanın içinde yer alacak */
+}
+
+iframe {
+    width: 100%; /* %80 alanın içinde yer alacak */
+}
+
+.contact-h2 {
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #18216d;
+}

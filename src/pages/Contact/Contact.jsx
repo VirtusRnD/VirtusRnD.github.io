@@ -16,7 +16,8 @@ function Contact() {
         <div className="contact">
             <div className="contact__container">
             <div className="contact__info">
-                    <h2>{contact_title}</h2>
+                    <h2 className="contact-h2">{contact_title}</h2>
+                        Sorunuz mu var Bizimle iletişime Geçin.
                         <p>
                         {contact_address}
                         </p>

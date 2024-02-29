@@ -9,6 +9,8 @@
 .sb__footer {
     display: flex;
     flex-direction: column;
+   
+    margin: 0 auto;
 }
 
 .sb__footer-links{
@@ -39,10 +41,7 @@ a{
 .socialmedia{
     display: flex;
     flex-direction: row;
-}
 
-.socialmedia img{
-    width: 80%;
 }
 
 .sb__footer-links_div h4{
@@ -88,6 +87,10 @@ hr{
     line-height: 15px;
     color: rgb(255, 255, 255);
     font-weight: 600;
+}
+
+.footer-h4 {
+    color: white;
 }
 
 @media screen and (max-width: 850px) {

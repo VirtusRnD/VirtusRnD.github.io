@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="sb__footer section__padding">
                 <div className="sb__footer-links">
                     <div className="sb__footer-links__div">
-                        <h4>For Business</h4>
+                        <h4 className='footer-h4'>For Business</h4>
                         <a href = "/Employer">
                             <p>Employer</p>
                         </a>
@@ -32,7 +32,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="sb__footer-links__div">
-                        <h4>Resources</h4>
+                        <h4 className='footer-h4'>Resources</h4>
                         <a href = "/resources">
                             <p>resources</p>
                         </a>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
 
                     <div className="sb__footer-links__div">
-                        <h4>Company</h4>
+                        <h4 className='footer-h4'>Company</h4>
                         <a href = "/about">
                             <p>About</p>
                         </a>
@@ -57,24 +57,25 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="sb__footer-links__div">
-                        <h4>{t("social_media")}</h4>
-                        <div className="socialmeadi">
+                        <h4 className='footer-h4'>{t("social_media")}</h4>
+                        <div className="socialmedia">
                             <p>
                                 
                                 <a href="https://www.linkedin.com/company/virtusarge/">
-                                    <img src={process.env.PUBLIC_URL + '/linkedin.png'} alt="LinkedIn" />
+                                    <img src="./linkedin-50.svg" alt="LinkedIn" />
                                 </a>
                             </p>
                             <p>
                                 <a href="https://www.instagram.com/virtusarge"> 
-                                    <img src={process.env.PUBLIC_URL +"instagram.png"} alt="Instagram" />
+                                    <img src="/instagram-50.svg" alt="Instagram" />
                                 </a>
                             </p>
                             <p>
                                 <a href="https://www.facebook.com/virtusarge"> 
-                                    <img src={process.env.PUBLIC_URL +"facebook.png"} alt="Facebook" />
+                                    <img src="/facebook-48.svg" alt="Facebook" />
                                 </a>
                             </p>
+                            
                             
                         </div>
                     </div>

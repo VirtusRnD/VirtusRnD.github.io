@@ -24,3 +24,4 @@ const landing_title = t("landing_title");
 }
 
 export default Landing;
+

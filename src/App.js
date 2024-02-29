@@ -19,19 +19,13 @@ function App() {
       <div className="App">
         <ScrollTop />
         <Navbar />
-
         <Landing />
         <About />
-        {/*
-        <Products2 />
-        <Partner />
-        */}
-
         <Testpage />
         <Contact />
         <Routes>
+          <Route path="/" element={<Landing />} />
           <Route path="/about" element={<About />} />
-          <Route path="/landing" element={<Landing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/partner" element={<Partner />} />
           <Route path="/products" element={<Products />} />
