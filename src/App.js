@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -12,26 +12,69 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import Products2 from "./pages/Products2/Products2.jsx";
 import ScrollTop from "./components/ScrollTop/ScrollTop.jsx";
 import Testpage from "./pages/testpage/testpage.js";
+import NotFound from "./pages/NotFound/NotFound.jsx";
 
 function App() {
+  const [validURL, setValidURL] = useState(true);
+
+  useEffect(() => {
+    // Check the validity of the URL
+    const isValidURL = checkURLValidity();
+
+    // Update the validURL state variable
+    setValidURL(isValidURL);
+  }, []);
+
+  const checkURLValidity = () => {
+    // Define the valid URLs in your application
+    const validURLs = [
+      "http://localhost:3000/",
+      "http://localhost:3000/#landing",
+      "http://localhost:3000/#about",
+      "http://localhost:3000/#contact",
+      "http://localhost:3000/#partner",
+    ];
+
+    // Get the full pathname of the URL, including the hash
+
+    // Check if the current fullPath is in the validURLs array
+    return validURLs.includes(window.location.href);
+  };
   return (
     <Router>
       <div className="App">
-        <ScrollTop />
-        <Navbar />
-        <Landing />
-        <About />
-        <Testpage />
-        <Contact />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/partner" element={<Partner />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/products2" element={<Products2 />} />
-        </Routes>
-        <Footer />
+        {!validURL ? (
+          <NotFound />
+        ) : (
+          <>
+            <Navbar />
+            <div id="landing">
+              <Landing />
+            </div>
+
+            <ScrollTop />
+
+            <div id="about">
+              <About />
+            </div>
+
+            <div id="testpage">
+              <Testpage />
+            </div>
+
+            <div id="partner">
+              <Partner />
+            </div>
+
+            <div id="contact">
+              <Contact />
+            </div>
+
+            <div id="footer" className="footer">
+              <Footer />
+            </div>
+          </>
+        )}
       </div>
     </Router>
   );
