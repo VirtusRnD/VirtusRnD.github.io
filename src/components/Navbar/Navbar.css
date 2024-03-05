@@ -53,18 +53,15 @@ nav ul li a:not(.active):hover {
 }
 
 nav .menu {
-    display: block; /* Flex yerine block */
+    display: none;
     position: absolute;
     top: 0.75rem;
     right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
     width: 2.25rem;
     height: 2rem;
-    background-color: #172554; /* Arka plan rengi */
-    border: none; /* Kenarlık kaldır */
-    cursor: pointer;
-    z-index: 1001; /* Pozitif bir z-index değeri kullanın */
 }
-
 
 nav .menu span {
     height: 0.4rem;
@@ -76,9 +73,16 @@ nav .menu span {
 
 @media (max-width: 480px) {
     nav .menu {
-        display: flex;
-        color: yellow;
-        z-index: -9999;
+        display: block; /* Flex yerine block */
+        position: absolute;
+        top: 0.75rem;
+        right: 0.5rem;
+        width: 2.25rem;
+        height: 2rem;
+        background-color: #5d6475; /* Arka plan rengi */
+        border: none; /* Kenarlık kaldır */
+        cursor: pointer;
+        z-index: 1001; /* Pozitif bir z-index değeri kullanın */
     }
 
     nav {
