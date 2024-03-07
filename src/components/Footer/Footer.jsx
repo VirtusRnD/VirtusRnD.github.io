@@ -43,18 +43,7 @@ const Footer = () => {
                             <p>{production_digitale}</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links__div">
-                        <h4 className='footer-h4'>Resources</h4>
-                        <a href = "/resources">
-                            <p>resources</p>
-                        </a>
-                        <a href = "/resources2">
-                            <p>resources 2</p>
-                        </a>
-                        <a href = "/resources3">
-                            <p>resources 3</p>
-                        </a>
-                    </div>
+                   
 
                     <div className="sb__footer-links__div">
                         <h4 className='footer-h4'>{company}</h4>
@@ -102,10 +91,9 @@ const Footer = () => {
                     </p>
                     </div>
                     <div className="sb__footer-below-links">
-                        <a href="./gizlilik_politikasi.pdf"><div><p>{footer_terms_condi}</p></div></a>
-                        <a href="/privacy"><div><p>{footer_privacy}</p></div></a>
-                        <a href="/security"><div><p>{footer_security}</p></div></a>
-                        <a href="/cookie"><div><p>{footer_cookie}</p></div></a>
+                        
+                        <a href="./Privacy_Policy.pdf"><div><p>{footer_privacy}</p></div></a>
+                        
                     </div>
                 </div>
 

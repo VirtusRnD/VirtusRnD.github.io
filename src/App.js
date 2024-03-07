@@ -32,7 +32,6 @@ function App() {
       "http://localhost:3000/#landing",
       "http://localhost:3000/#about",
       "http://localhost:3000/#contact",
-      "http://localhost:3000/#partner",
     ];
 
     // Get the full pathname of the URL, including the hash
@@ -60,10 +59,6 @@ function App() {
 
             <div id="testpage">
               <Testpage />
-            </div>
-
-            <div id="partner">
-              <Partner />
             </div>
 
             <div id="contact">

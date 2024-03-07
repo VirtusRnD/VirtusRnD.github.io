@@ -23,7 +23,7 @@ const Navbar = () => {
   const virtusarge = t("virtus_arge");
   const about = t("about");
   const products = t("products");
-  const partner = t("partner");
+
   const contact = t("contact");
 
   return (
@@ -44,9 +44,7 @@ const Navbar = () => {
         <li onClick={() => handleNavLinkClick("testpage")}>
           <span>{products}</span>
         </li>
-        <li onClick={() => handleNavLinkClick("partner")}>
-          <span>{partner}</span>
-        </li>
+
         <li onClick={() => handleNavLinkClick("contact")}>
           <span>{contact}</span>
         </li>
