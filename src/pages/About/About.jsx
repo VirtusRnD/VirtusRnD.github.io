@@ -32,7 +32,7 @@ function About() {
                 title={AboutContent.title}
                 content={AboutContent.text}
                 section={AboutContent.section}
-                icon="/graphs.svg"
+                icon="/about.svg"
                 id="about"
             />
         </div>
