@@ -17,7 +17,6 @@
     border-radius: 12px;
   }
   
-  /* 3D reflection effect */
   .reflection {
     position: absolute;
     width: 100%;
@@ -52,8 +51,6 @@
     margin-bottom: 16px;
   }
   
-  /* normal css  */
-  
   body {
     
     background: #ffffff;
@@ -81,6 +78,3 @@
   .btns .btn:last-child {
     margin-left: 40px;
   }
-  
-  /* normal css  */
-  

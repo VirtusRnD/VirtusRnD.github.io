@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./landing.css";
 import { useSpring, animated } from "react-spring";
-import { useTranslation } from "react-i18next";
-
+import { translate } from "../../components/Translation/Translation";
 function Landing() {
-  const { t } = useTranslation();
-  const landingTitle = t("landing_title"); // Get the translated title
+  
+  const landingTitle = translate("landing_title");
 
-  const [chars, setChars] = useState([]); // State to store typed characters
-  const [currentIndex, setCurrentIndex] = useState(0); // Index of the currently displayed character
+  const [chars, setChars] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const springConfig = { delay: 50, duration: 150 }; // Adjust delay and duration for typing effect
+  const springConfig = { delay: 50, duration: 150 };
 
   const typedProps = useSpring({
     from: { opacity: 10 },
@@ -18,7 +17,7 @@ function Landing() {
       await new Promise((resolve) => setTimeout(resolve, springConfig.delay));
       return { opacity: 1 };
     },
-    reset: true, // Reset animation after each character
+    reset: true,
   });
 
   useEffect(() => {
@@ -31,8 +30,8 @@ function Landing() {
       }
     }, springConfig.delay + springConfig.duration);
 
-    return () => clearInterval(typingInterval); // Cleanup on unmount
-  }, [landingTitle, currentIndex]); // Dependencies for effect
+    return () => clearInterval(typingInterval);
+  }, [landingTitle, currentIndex]);
 
   return (
     <div className="landing_container">

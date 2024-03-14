@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-
 import Footer from "./components/Footer/Footer.jsx";
 import About from "./pages/About/About.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
@@ -15,25 +14,25 @@ function App() {
   const [validURL, setValidURL] = useState(true);
 
   useEffect(() => {
-    // Check the validity of the URL
     const isValidURL = checkURLValidity();
 
-    // Update the validURL state variable
     setValidURL(isValidURL);
   }, []);
 
   const checkURLValidity = () => {
-    // Define the valid URLs in your application
     const validURLs = [
       "http://localhost:3000/",
+      "http://localhost:3000/?lang=en",
+      "http://localhost:3000/?lang=tr",
       "http://localhost:3000/#landing",
       "http://localhost:3000/#about",
       "http://localhost:3000/#contact",
+      "http://virtusarge.com/",
+      "http://virtusarge.com//#landing",
+      "http://virtusarge.com//#about",
+      "http://virtusarge.com//#contact",
     ];
 
-    // Get the full pathname of the URL, including the hash
-
-    // Check if the current fullPath is in the validURLs array
     return validURLs.includes(window.location.href);
   };
   return (

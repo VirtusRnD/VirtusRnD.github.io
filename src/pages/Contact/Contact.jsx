@@ -1,23 +1,22 @@
 import React from "react";
 import "./Contact.css";
-
-import { useTranslation } from "react-i18next";
-
+import { translate } from "../../components/Translation/Translation";
 function Contact() {
 
-    const { t } = useTranslation();
+    
 
 
-    const contact_title = t("contact_title");
-    const contact_address = t("contact_address");
-    const contact_telephone = t("contact_telephone");
+    const contact_title = translate("contact_title");
+    const contact_address = translate("contact_address");
+    const contact_telephone = translate("contact_telephone");
+    const questions = translate("questions");
 
     return (
         <div className="contact">
             <div className="contact__container">
             <div className="contact__info">
                     <h2 className="contact-h2">{contact_title}</h2>
-                        Sorunuz mu var Bizimle iletişime Geçin.
+                        {questions}
                         <p>
                         {contact_address}
                         </p>

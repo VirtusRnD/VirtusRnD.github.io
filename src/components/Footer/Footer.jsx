@@ -1,28 +1,20 @@
 import React from 'react';
 import "./Footer.css";
-
-import { useTranslation } from "react-i18next";
-
+import { translate } from "../Translation/Translation";
 
 
 const Footer = () => {
-
-    const { t } = useTranslation();
-
-    const footer_copyright = t("footer_copyright");
-    const footer_terms_condi = t("footer_terms-condi");
-    const footer_privacy = t("footer_privacy");
-    const footer_security = t("footer_security");
-    const footer_cookie = t("footer_cookie");
-    const production_mobile = t("production_mobile_title");
-    const production_web = t("production_web_title");
-    const production_data = t("production_data_title");
-    const production_digitale = t("production_digitale_title");
-    const products = t("products");
-    const company = t("company");
-    const aboutus = t("aboutus");
-    const career = t("career");
-    const contact = t("contact");
+    const footer_copyright = translate("footer_copyright");
+    const footer_privacy = translate("footer_privacy");
+    const production_mobile = translate("production_mobile_title");
+    const production_web = translate("production_web_title");
+    const production_data = translate("production_data_title");
+    const production_digitale = translate("production_digitale_title");
+    const products = translate("products");
+    const company = translate("company");
+    const aboutus = translate("aboutus");
+    const career = translate("career");
+    const contact = translate("contact");
 
     return (
         <div className="footer">
@@ -30,16 +22,16 @@ const Footer = () => {
                 <div className="sb__footer-links">
                     <div className="sb__footer-links__div">
                         <h4 className='footer-h4'>{products}</h4>
-                        <a href = "/Employer">
+                        <a href = "https://virtusarge.com/#about">
                             <p>{production_web}</p>
                         </a>
-                        <a href = "/Employer2">
+                        <a href = "https://virtusarge.com/#about">
                             <p>{production_mobile}</p>
                         </a>
-                        <a href = "/Employer3">
+                        <a href = "https://virtusarge.com/#about">
                             <p>{production_data}</p>
                         </a>
-                        <a href = "/Employer3">
+                        <a href = "https://virtusarge.com/#about">
                             <p>{production_digitale}</p>
                         </a>
                     </div>
@@ -58,7 +50,7 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className="sb__footer-links__div">
-                        <h4 className='footer-h4'>{t("social_media")}</h4>
+                        <h4 className='footer-h4'>{translate("social_media")}</h4>
                         <div className="socialmedia">
                             <p>
                                 
