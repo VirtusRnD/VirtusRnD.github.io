@@ -46,34 +46,30 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {!validURL ? (
-          <NotFound />
-        ) : (
-          <>
-            <Navbar />
-            <div id="landing">
-              <Landing />
-            </div>
+        <>
+          <Navbar />
+          <div id="landing">
+            <Landing />
+          </div>
 
-            <ScrollTop />
+          <ScrollTop />
 
-            <div id="about">
-              <About />
-            </div>
+          <div id="about">
+            <About />
+          </div>
 
-            <div id="testpage">
-              <Testpage />
-            </div>
+          <div id="testpage">
+            <Testpage />
+          </div>
 
-            <div id="contact">
-              <Contact />
-            </div>
+          <div id="contact">
+            <Contact />
+          </div>
 
-            <div id="footer" className="footer">
-              <Footer />
-            </div>
-          </>
-        )}
+          <div id="footer" className="footer">
+            <Footer />
+          </div>
+        </>
       </div>
     </Router>
   );
