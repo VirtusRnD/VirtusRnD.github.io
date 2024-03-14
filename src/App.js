@@ -28,9 +28,17 @@ function App() {
       "http://localhost:3000/#about",
       "http://localhost:3000/#contact",
       "http://virtusarge.com/",
-      "http://virtusarge.com//#landing",
-      "http://virtusarge.com//#about",
-      "http://virtusarge.com//#contact",
+      "http://virtusarge.com/?lang=en",
+      "http://virtusarge.com/?lang=tr",
+      "http://virtusarge.com/#landing",
+      "http://virtusarge.com/#about",
+      "http://virtusarge.com/#contact",
+      "https://virtusrnd.github.io",
+      "https://virtusrnd.github.io/?lang=en",
+      "https://virtusrnd.github.io/?lang=tr",
+      "https://virtusrnd.github.io/#about",
+      "https://virtusrnd.github.io/#landing",
+      "https://virtusrnd.github.io/#contact",
     ];
 
     return validURLs.includes(window.location.href);
