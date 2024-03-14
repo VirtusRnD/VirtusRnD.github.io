@@ -20,7 +20,6 @@ function Contact() {
                         <p>
                         {contact_address}
                         </p>
-                    <p>{contact_telephone} 123 456 7890</p>
                     <p>Email: info@virtusarge.com</p>
                 </div>
 
