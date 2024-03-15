@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 import trflag from "../../common/SvgIcon/turkey-flag.svg";
 import enflag from "../../common/SvgIcon/united-kingdom-flag.svg";
 import { translate } from "../Translation/Translation";
@@ -45,9 +44,9 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Link to="/" className="title">
+      <a href={`/?lang=${selectedLang}`} className="title">
         {virtusarge}
-      </Link>
+      </a>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <img src="/menu.svg" alt="Menu Icon" width="24" height="24" />
       </div>

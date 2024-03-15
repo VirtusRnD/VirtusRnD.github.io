@@ -31,9 +31,12 @@ export const ContentWrapper = styled("div")`
     padding-top: 4rem;
   }
   h6 {
-    font-size: 40px;
+    font-size: 36px;
     color: #18216d;
     font-family: Arial, Helvetica, sans-serif;
+    @media only screen and (max-width: 768px) {
+      font-size: 22px; /* Adjust font size for mobile */
+    }
   }
 `;
 
@@ -54,6 +57,9 @@ export const MinTitle = styled("h6")`
 
 export const MinPara = styled("p")`
   font-size: 16px;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const ButtonWrapper = styled("div")`

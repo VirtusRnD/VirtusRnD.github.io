@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import ScrollTop from "./components/ScrollTop/ScrollTop.jsx";
 import Testpage from "./pages/testpage/testpage.js";
 import NotFound from "./pages/NotFound/NotFound.jsx";
-
+import { translate } from "./components/Translation/Translation";
 function App() {
   const [validURL, setValidURL] = useState(true);
 
@@ -43,6 +43,12 @@ function App() {
 
     return validURLs.includes(window.location.href);
   };
+
+  useEffect(() => {
+    const virtusarge = translate("virtus_arge");
+    document.title = virtusarge;
+  }, []);
+
   return (
     <Router>
       <div className="App">
