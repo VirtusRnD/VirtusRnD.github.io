@@ -20,7 +20,7 @@ function Contact() {
                         <p>
                         {contact_address}
                         </p>
-                    <p>Email: info@virtusarge.com</p>
+                    <p>info@virtusarge.com</p>
                 </div>
 
                 <iframe 
