@@ -9,7 +9,12 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import ScrollTop from "./components/ScrollTop/ScrollTop.jsx";
 import Testpage from "./pages/testpage/testpage.js";
 import NotFound from "./pages/NotFound/NotFound.jsx";
+import ServicesDigital from "./pages/servicesDigital/servicesDigital.jsx";
+import ServicesMobile from "./pages/servicesMobile/servicesMobile.jsx";
+import ServicesWeb from "./pages/servicesWeb/servicesWeb.jsx";
+import ServicesAI from "./pages/servicesAI/servicesAI.jsx";
 import { translate } from "./components/Translation/Translation";
+
 function App() {
   const [validURL, setValidURL] = useState(true);
 
@@ -39,6 +44,10 @@ function App() {
       "https://virtusrnd.github.io/#about",
       "https://virtusrnd.github.io/#landing",
       "https://virtusrnd.github.io/#contact",
+      "https://virtusrnd.github.io/#servicesweb",
+      "https://virtusrnd.github.io/#servicesmobile",
+      "https://virtusrnd.github.io/#servicesai",
+      "https://virtusrnd.github.io/#servicesdigital",
     ];
 
     return validURLs.includes(window.location.href);
@@ -52,30 +61,43 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <>
-          <Navbar />
-          <div id="landing">
-            <Landing />
-          </div>
+        {!validURL ? (
+          <NotFound />
+        ) : (
+          <>
+            <Navbar />
+            <div id="landing">
+              <Landing />
+            </div>
 
-          <ScrollTop />
+            <ScrollTop />
 
-          <div id="about">
-            <About />
-          </div>
+            <div id="about">
+              <About />
+            </div>
 
-          <div id="testpage">
-            <Testpage />
-          </div>
+            <div id="servicesweb">
+              <ServicesWeb />
+            </div>
+            <div id="servicesmobile">
+              <ServicesMobile />
+            </div>
+            <div id="servicesai">
+              <ServicesAI />
+            </div>
+            <div id="servicesdigital">
+              <ServicesDigital />
+            </div>
 
-          <div id="contact">
-            <Contact />
-          </div>
+            <div id="contact">
+              <Contact />
+            </div>
 
-          <div id="footer" className="footer">
-            <Footer />
-          </div>
-        </>
+            <div id="footer" className="footer">
+              <Footer />
+            </div>
+          </>
+        )}
       </div>
     </Router>
   );

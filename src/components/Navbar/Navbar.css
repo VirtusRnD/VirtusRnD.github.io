@@ -77,7 +77,9 @@ nav .menu span {
     display: flex;
     align-items: center;
   }
-  
+  .navbar_imgtext span {
+    margin-left: 5px;
+  }
   .language-toggle img {
     cursor: pointer;
     width: 24px;

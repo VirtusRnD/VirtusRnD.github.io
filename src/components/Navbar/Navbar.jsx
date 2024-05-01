@@ -45,7 +45,12 @@ const Navbar = () => {
   return (
     <nav>
       <a href={`/?lang=${selectedLang}`} className="title">
-        {virtusarge}
+      <div className="navbar_imgtext" >
+  <img src="/virtusrndlogo.png" alt="Virtus Arge Logo" width="18" height="18" style={{ marginRight: '5px' }} />
+  <span>{virtusarge}</span>
+</div>
+
+        
       </a>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <img src="/menu.svg" alt="Menu Icon" width="24" height="24" />

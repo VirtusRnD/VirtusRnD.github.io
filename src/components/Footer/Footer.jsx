@@ -40,19 +40,19 @@ const Footer = () => {
                 <div className="sb__footer-links">
                     <div className="sb__footer-links__div">
                         <h4 className='footer-h4'>{products}</h4>
-                        <a onClick={() => handleNavLinkClick("testpage")}>
+                        <a onClick={() => handleNavLinkClick("servicesweb")}>
                             <span className="nav-link"></span>
                             <p>{production_web}</p>
                         </a>
-                        <a onClick={() => handleNavLinkClick("testpage")}>
+                        <a onClick={() => handleNavLinkClick("servicesmobile")}>
                             <span className="nav-link"></span>
                             <p>{production_mobile}</p>
                         </a>
-                        <a onClick={() => handleNavLinkClick("testpage")}>
+                        <a onClick={() => handleNavLinkClick("servicesai")}>
                             <span className="nav-link"></span>
                             <p>{production_data}</p>
                         </a>
-                        <a onClick={() => handleNavLinkClick("testpage")}>
+                        <a onClick={() => handleNavLinkClick("servicesdigital")}>
                             <span className="nav-link"></span>
                             <p>{production_digitale}</p>
                         </a>

@@ -56,6 +56,9 @@ a{
     margin: 0.5rem 0;
     cursor: pointer;
 }
+.sb__footer-links__div a {
+    cursor: pointer;
+}
 
 .sb__footer-below {
     display: flex;
