@@ -1,4 +1,4 @@
-import { Row, Col, Button } from "antd"; // Button bileşenini ekledik
+import { Row, Col, Button } from "antd";
 import { Fade } from "react-awesome-reveal";
 import {
   ContentSection,
@@ -38,7 +38,6 @@ const ContentBlock = ({
         >
           <Col lg={11} md={11} sm={12} xs={24}>
             {icon && <img src={icon} alt={title} />}{" "}
-            {/* İkonu burada kullanabilirsiniz */}
           </Col>
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
@@ -50,7 +49,7 @@ const ContentBlock = ({
                     button.map((item, id) => (
                       <Button
                         key={id}
-                        type="primary" // varsayılan bir renk belirleyin
+                        type="primary"
                         onClick={() => scrollTo("about")}
                       >
                         {item.title}
@@ -66,7 +65,6 @@ const ContentBlock = ({
                           {item.icon && (
                             <img src={item.icon} alt={item.title} />
                           )}{" "}
-                          {/* İkonları burada kullanabilirsiniz */}
                           <MinTitle>{item.title}</MinTitle>
                           <MinPara>{item.content}</MinPara>
                         </Col>

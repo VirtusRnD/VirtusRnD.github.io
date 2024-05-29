@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const ContentSection = styled("section")`
   position: relative;
   padding: 10rem 0 8rem;
-  width: 80%; /* Sayfanın yatayda %80'ini kullan */
-  margin: 0 auto; /* Yatayda ortala */
+  width: 80%;
+  margin: 0 auto;
 
   @media only screen and (max-width: 1024px) {
     padding: 4rem 0 4rem;
@@ -14,7 +14,7 @@ export const ContentSection = styled("section")`
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
-  font-size: 18px; /* Metin boyutunu değiştir */
+  font-size: 18px;
 `;
 
 export const StyledRow = styled(Row)`
@@ -26,14 +26,17 @@ export const ContentWrapper = styled("div")`
   position: relative;
   max-width: 700px;
   margin: auto;
-  width: 100%; /* Genişliği %100 yap */
+  width: 100%;
   @media only screen and (max-width: 575px) {
     padding-top: 4rem;
   }
   h6 {
-    font-size: 40px; /* Başlık boyutunu değiştir */
+    font-size: 36px;
     color: #18216d;
     font-family: Arial, Helvetica, sans-serif;
+    @media only screen and (max-width: 768px) {
+      font-size: 22px; /* Adjust font size for mobile */
+    }
   }
 `;
 
@@ -44,7 +47,7 @@ export const ServiceWrapper = styled("div")`
 `;
 
 export const MinTitle = styled("h6")`
-  font-size: 20px; /* Başlık boyutunu değiştir */
+  font-size: 20px;
   line-height: 1rem;
   padding: 0.5rem 0;
 
@@ -53,7 +56,10 @@ export const MinTitle = styled("h6")`
 `;
 
 export const MinPara = styled("p")`
-  font-size: 16px; /* Metin boyutunu değiştir */
+  font-size: 16px;
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const ButtonWrapper = styled("div")`

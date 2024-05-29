@@ -1,25 +1,23 @@
 import React from "react";
 import "./About.css";
 import ContentBlock from "../../components/ContentBlock/ContentBlock";
-
-import { useTranslation } from "react-i18next";
-
+import { translate } from "../../components/Translation/Translation";
 function About() {
 
-    const { t } = useTranslation();
+    
 
     const AboutContent = {
-        "title": t("why_virtus"),
-        "text": t("about_content"),
+        "title": translate("why_virtus"),
+        "text": translate("about_content"),
         "section": [
             {
-                "title": t("about_inner_1_title"),
-                "content": t("about_inner_1_content"),
+                "title": translate("about_inner_1_title"),
+                "content": translate("about_inner_1_content"),
                 "icon": "/notes.svg"
             },
             {
-                "title": t("about_inner_2_title"),
-                "content": t("about_inner_2_content"),
+                "title": translate("about_inner_2_title"),
+                "content": translate("about_inner_2_content"),
                 "icon": "/notes.svg"
             }
         ]
@@ -32,7 +30,7 @@ function About() {
                 title={AboutContent.title}
                 content={AboutContent.text}
                 section={AboutContent.section}
-                icon="/graphs.svg"
+                icon="/about.svg"
                 id="about"
             />
         </div>

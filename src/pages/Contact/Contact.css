@@ -1,16 +1,18 @@
 .contact__container {
     display: flex;
     justify-content: space-between;
-    width: 80%; /* Yatayda %80 alan kaplasın */
-    margin: 0 auto; /* Yatayda ortala */
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .contact__info {
-    width: 100%; /* %80 alanın içinde yer alacak */
+    width: 100%;
 }
 
 iframe {
-    width: 100%; /* %80 alanın içinde yer alacak */
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .contact-h2 {
