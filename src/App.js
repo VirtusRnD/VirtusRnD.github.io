@@ -16,30 +16,6 @@ import ServicesAI from "./pages/servicesAI/servicesAI.jsx";
 import { translate } from "./components/Translation/Translation";
 
 function App() {
-  const [validURL, setValidURL] = useState(true);
-
-  useEffect(() => {
-    const isValidURL = checkURLValidity();
-
-    setValidURL(isValidURL);
-  }, []);
-
-  const checkURLValidity = () => {
-    const validURLs = [
-      "http://localhost:3000/",
-      "http://localhost:3000/?lang=en",
-      "http://localhost:3000/?lang=tr",
-      "http://localhost:3000/#landing",
-      "http://localhost:3000/#about",
-      "http://localhost:3000/#contact",
-      "https://virtusarge.com/",
-      "https://virtusarge.com/?lang=en",
-      "https://virtusarge.com/?lang=tr",
-    ];
-
-    return validURLs.includes(window.location.href);
-  };
-
   useEffect(() => {
     const virtusarge = translate("virtus_arge");
     document.title = virtusarge;
@@ -48,43 +24,24 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {!validURL ? (
-          <NotFound />
-        ) : (
-          <>
-            <Navbar />
-            <div id="landing">
-              <Landing />
-            </div>
+        <Navbar />
+        <ScrollTop />
+        <Routes>
+          {/* Define specific routes */}
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/servicesweb" element={<ServicesWeb />} />
+          <Route path="/servicesmobile" element={<ServicesMobile />} />
+          <Route path="/servicesai" element={<ServicesAI />} />
+          <Route path="/servicesdigital" element={<ServicesDigital />} />
 
-            <ScrollTop />
+          {/* Catch-all route to redirect to Landing page */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
 
-            <div id="about">
-              <About />
-            </div>
-
-            <div id="servicesweb">
-              <ServicesWeb />
-            </div>
-            <div id="servicesmobile">
-              <ServicesMobile />
-            </div>
-            <div id="servicesai">
-              <ServicesAI />
-            </div>
-            <div id="servicesdigital">
-              <ServicesDigital />
-            </div>
-
-            <div id="contact">
-              <Contact />
-            </div>
-
-            <div id="footer" className="footer">
-              <Footer />
-            </div>
-          </>
-        )}
+        {/* Footer */}
+        <Footer />
       </div>
     </Router>
   );
