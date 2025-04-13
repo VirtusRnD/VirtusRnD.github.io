@@ -8,7 +8,9 @@ const ServicesAI = () => {
     title: translate("production_data_title"),
     content: translate("production_data_content"),
     id: "content-block-id",
+
     direction: "left",
+
   };
       return (
         <div>

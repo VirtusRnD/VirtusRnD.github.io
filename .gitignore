@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+src/components/Slider
+src/pages/Products
+src/pages/Products2
+src/pages/Partner
+src/pages/Main
