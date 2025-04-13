@@ -40,7 +40,7 @@ function App() {
       "https://virtusarge.com/?lang=tr",
     ];
 
-    return validURLs.includes(window.location.href);
+    return validURLs.includes(window.location.href) || window.location.href.startsWith("https://virtusarge.com");
   };
 
   useEffect(() => {
