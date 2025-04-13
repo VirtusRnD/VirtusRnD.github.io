@@ -8,7 +8,7 @@ const ServicesDigital = () => {
         title: translate("production_digitale_title"),
         content: translate("production_digitale_content"),
         id: "content-block-id",
-        direction: "left",
+        direction: "right",
       };
     return (
         <div>

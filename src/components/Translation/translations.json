@@ -31,6 +31,13 @@
         "tr": "Günümüz iş dünyasında veri bilimi ve yapay zeka giderek önem kazanmaktadır. Karar destek sistemleri işletmelerin stratejik kararlar almasına yardımcı olurken, RPA (robotic process automation) çözümleri ise tekrarlayan iş süreçlerini otomatikleştirerek verimliliği arttırır. Gelir-gider analitiği, işletmelerin finansal performanslarını izlemesine ve optimize etmesine olanak tanırken, müşteri ve ürün analitiği, müşteri davranışlarını ve ürün performansını anlamayı sağlar. Bu alanlar şirketlerin rekabet avantajı kazanmasına ve sürdürülebilir büyüme sağlamasına yardımcı olur.",
         "en": "Data science and artificial intelligence are increasingly gaining importance in today's business world. Decision support systems assist businesses in making strategic decisions, while RPA (robotic process automation) solutions automate repetitive business processes and increase efficiency. Income-expense analytics allows businesses to monitor and optimize their financial performance, while customer and product analytics are crucial for understanding customer behaviors and product performance. These areas help companies gain a competitive advantage and achieve sustainable growth."
     },
+
+    "production_cons_content": {
+        "tr": "Tıp alanında istatistiksel analizler, bilimsel araştırmaların güvenilirliği ve geçerliliği açısından büyük önem taşımaktadır. Klinik çalışmaların planlanması, veri toplama süreçlerinin doğru kurgulanması ve elde edilen sonuçların istatistiksel olarak anlamlı şekilde yorumlanması, araştırmaların başarısını doğrudan etkiler. Hipotez testlerinden regresyon analizlerine, örneklem büyüklüğü hesaplamalarından ileri düzey modellemelere kadar geniş bir yelpazede sunduğumuz danışmanlık hizmetleri, hekimlerin bilimsel çalışmalarını daha sağlam temellere oturtmasına ve yayın süreçlerinde destek almasına olanak tanır. Bu hizmetler, tıp profesyonellerinin araştırmalarında hem zamandan tasarruf etmelerini hem de sonuçlarının akademik geçerliliğini artırmalarını sağlar.",
+        "en": "In the medical field, statistical analysis plays a crucial role in ensuring the reliability and validity of scientific research. From the planning of clinical studies to proper data collection and meaningful interpretation of results, statistical methods directly impact the success of research. Our consultancy services cover a wide range—from hypothesis testing and regression analyses to sample size calculations and advanced modeling—supporting physicians in building robust studies and navigating the publication process. These services help medical professionals save time and enhance the academic credibility of their research outcomes."
+    },
+
+
     "production_data_title": {
         "tr": "Veri Bilimi ve Yapay Zeka",
         "en": "Data Science and Artificial Intelligence"
@@ -43,6 +50,11 @@
         "tr": "Web Tasarımı ve Geliştirme",
         "en": "Web Design and Development"
     },
+    "production_cons_title": {
+        "tr": "İstatistiksel Danışmanlık",
+        "en": "Statistical Consultancy"
+    },
+    
     "about_inner_2_content": {
         "tr": "Müşterilerimizin sorunlarını çözmek ve potansiyellerini ortaya çıkarmak için özenle çalışıyoruz. Kullanıcı odaklı çözümler üreterek her projede müşteri memnuniyetini en üst düzeye çıkarıyoruz. Ekip olarak açık iletişim, öğrenmeye açıklık ve çeşitliliği kucaklayan bir kültürle kendimizi güçlendiriyoruz. Etik değerlere sıkı bir bağlılıkla, topluluklara hizmet etmek, geleceğin dijital dünyasını adil ve kapsayıcı bir şekilde inşa etmek için teknolojinin gücünden yararlanıyoruz.",
         "en": "We work diligently to solve our clients' problems and unlock their potential. By producing user-centric solutions, we maximize customer satisfaction in every project. As a team, we strengthen ourselves with a culture of open communication, openness to learning, and embracing diversity. With a firm commitment to ethical values, we harness the power of technology to serve communities, building the future digital world in a fair and inclusive manner."
