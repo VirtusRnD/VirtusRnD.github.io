@@ -8,7 +8,7 @@ const ServicesMobile = () => {
         title: translate("production_web_title"),
         content: translate("production_web_content"),
         id: "content-block-id",
-        direction: "right",
+        direction: "left",
       };
 
     return (

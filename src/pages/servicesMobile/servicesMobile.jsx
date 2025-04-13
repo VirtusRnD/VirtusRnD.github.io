@@ -8,7 +8,8 @@ const ServicesMobile = () => {
         title: translate("production_mobile_title"),
         content: translate("production_mobile_content"),
         id: "content-block-id",
-        direction: "left",
+
+        direction: "right",
       };
     return (
         <div>

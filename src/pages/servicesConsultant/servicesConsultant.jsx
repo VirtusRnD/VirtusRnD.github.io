@@ -2,15 +2,13 @@ import React from "react";
 import ContentBlock from "../../components/ContentBlock/ContentBlock";
 import { translate } from "../../components/Translation/Translation";
 
-const ServicesAI = () => {
+const ServicesConsultant = () => {
   const data = {
-    icon: "/artificial.svg",
-    title: translate("production_data_title"),
-    content: translate("production_data_content"),
+    icon: "/consultant.svg",
+    title: translate("production_cons_title"),
+    content: translate("production_cons_content"),
     id: "content-block-id",
-
-    direction: "left",
-
+    direction: "right",
   };
       return (
         <div>
@@ -18,4 +16,4 @@ const ServicesAI = () => {
         </div>
       );
 }
-export default ServicesAI;
+export default ServicesConsultant;

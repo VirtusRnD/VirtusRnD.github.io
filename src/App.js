@@ -13,6 +13,9 @@ import ServicesDigital from "./pages/servicesDigital/servicesDigital.jsx";
 import ServicesMobile from "./pages/servicesMobile/servicesMobile.jsx";
 import ServicesWeb from "./pages/servicesWeb/servicesWeb.jsx";
 import ServicesAI from "./pages/servicesAI/servicesAI.jsx";
+
+import ServicesConsultant from "./pages/servicesConsultant/servicesConsultant.jsx";
+
 import { translate } from "./components/Translation/Translation";
 
 function App() {
@@ -61,6 +64,10 @@ function App() {
 
             <div id="about">
               <About />
+            </div>
+
+            <div id="testpage">
+              <ServicesConsultant />
             </div>
 
             <div id="servicesweb">
