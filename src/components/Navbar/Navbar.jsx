@@ -26,7 +26,7 @@ const Navbar = () => {
 
   const virtusarge = translate("virtus_arge");
   const about = translate("about");
-  const products = translate("products");
+  const products = translate("services");
   const contact = translate("contact");
   const team = translate("team");
 

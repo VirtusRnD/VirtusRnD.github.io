@@ -19,6 +19,10 @@
         "tr": "Dijital Dönüşüm ve Strateji",
         "en": "Digital Transformation and Strategy"
     },
+    "services": {
+        "tr": "Hizmetlerimiz",
+        "en": "Our Services"
+    },
     "production_digitale_content": {
         "tr": "Kurumsal dijital dönüşüm, verileri yorumlamak/görselleştirmek, veri madenciliği ve analitik yoluyla değerli içgörüler elde etmek, performansı raporlamak, hızlı/doğru kararlar almak ve müşteri memnuniyetini artırmak için önemli bir araçtır. Bu süreçte müşteri odaklı stratejilerin ve süreçlerin benimsenmesi müşteri deneyimini, sadakatini ve geliri artırabilir. Veri madenciliği ve analitik, işletmelerin büyük veri kümelerinden değerli bilgiler çıkarmasına yardımcı olurken, veri görselleştirmesi karmaşık verileri anlamak ve karar verme süreçlerini hızlandırmak için kullanılır. Performans raporlaması, işletmelerin stratejik hedeflerine ne kadar yaklaştıklarını takip etmelerine ve gerekiyorsa düzeltici aksiyonlar almalarına olanak tanırken, hızlı ve doğru raporlama süreçleri de işletmelerin rekabet avantajını korumasına yardımcı olur. Bu sayede dijital dönüşüm süreci işletmelerin daha müşteri odaklı, veri odaklı ve rekabetçi olmalarını sağlar.",
         "en": "Corporate digital transformation is a crucial tool for increasing customer satisfaction, gaining valuable insights through data mining and analytics, visualizing data for interpretation, reporting performance, and making quick/accurate decisions. Adopting customer-centric strategies and actions during this process can enhance customer experience, loyalty and revenue. Data mining and analytics assist businesses in extracting valuable information from large datasets, while data visualization is important for understanding complex data and expediting decision-making processes. Performance reporting allows businesses to track how close they are to their strategic goals and take corrective actions if necessary, while fast and accurate reporting processes help businesses maintain their competitive advantage. In this way, the digital transformation process enables businesses to become more customer-focused, data-driven, and competitive."
@@ -128,8 +132,8 @@
         "en": "Social Media"
     },
     "about": {
-        "tr": "Hakkında",
-        "en": "About"
+        "tr": "Hakkımızda",
+        "en": "About Us"
     },
     "partner": {
         "tr": "Ortaklarımız",
