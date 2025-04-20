@@ -28,6 +28,7 @@ const Navbar = () => {
   const about = translate("about");
   const products = translate("products");
   const contact = translate("contact");
+  const team = translate("team");
 
   useEffect(() => {
     const handleLanguageChangeFromUrl = () => {
@@ -62,9 +63,13 @@ const Navbar = () => {
         <li onClick={() => handleNavLinkClick("testpage")}>
           <span>{products}</span>
         </li>
+        <li onClick={() => handleNavLinkClick("teampage")}>
+          <span>{team}</span>
+        </li>
         <li onClick={() => handleNavLinkClick("contact")}>
           <span>{contact}</span>
         </li>
+       
         <li className="language-toggle">
           {selectedLang === "tr" ? (
             <img src={enflag} alt="English Flag" onClick={() => handleLanguageChange("en")} />
