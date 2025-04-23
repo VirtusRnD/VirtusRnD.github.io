@@ -6,10 +6,16 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Team() {
   const teamMembers = [
+    {id: 0,
+      name: "Zeynep Filiz Eren",
+      title: "Co-Founder",
+      image: "zeynep.JPG",
+      linkedin: "https://www.linkedin.com/in/zeynep-filiz-eren-3b8a5b256/?originalSubdomain=tr",
+    },
     {
       id: 1,
       name: "Hasan Ali Özkan",
-      title: "CTO",
+      title: "Co-Founder",
       image: "Ali.JPG",
       linkedin: "https://www.linkedin.com/in/hasanaliozkan",
     },
@@ -64,21 +70,27 @@ function Team() {
     },
   ];
 
-  const midpoint = Math.ceil(teamMembers.length / 2);
-  const firstRow = teamMembers.slice(0, midpoint);
-  const secondRow = teamMembers.slice(midpoint);
+  // Divide the teamMembers array into three rows
+  const row1 = teamMembers.slice(0, 2);
+  const row2 = teamMembers.slice(2, 6);
+  const row3 = teamMembers.slice(6);
 
   return (
     <div className="team">
       <h2 className="team-title">{translate("team")}</h2>
       <div className="team-members-container">
         <div className="team-row">
-          {firstRow.map((member) => (
+          {row1.map((member) => (
             <TeamCard key={member.id} member={member} />
           ))}
         </div>
         <div className="team-row">
-          {secondRow.map((member) => (
+          {row2.map((member) => (
+            <TeamCard key={member.id} member={member} />
+          ))}
+        </div>
+        <div className="team-row">
+          {row3.map((member) => (
             <TeamCard key={member.id} member={member} />
           ))}
         </div>
