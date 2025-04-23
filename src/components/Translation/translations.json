@@ -19,6 +19,27 @@
         "tr": "Dijital Dönüşüm ve Strateji",
         "en": "Digital Transformation and Strategy"
     },
+    "kurucu-ortak": {
+        "tr": "Kurucu Ortak",
+        "en": "Co-Founder"
+    },
+    "flutter": {
+        "tr": "Flutter Geliştirici",
+        "en": "Flutter Developer"
+    },
+    "backend": {
+        "tr": "Backend Go Geliştirici",
+        "en": "Backend Go Developer"
+    },
+    "react": {
+        "tr": "React Geliştirici & UI/UX Tasarımcısı",
+        "en": "React Developer & UI/UX Designer"
+    },
+    "data": {
+        "tr": "Veri Mühendisi",
+        "en": "Data Engineer" 
+    },
+
     "services": {
         "tr": "Hizmetlerimiz",
         "en": "Our Services"
