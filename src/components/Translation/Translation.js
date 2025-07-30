@@ -16,5 +16,7 @@ function translate(key, selectedLanguage) {
   return translations[key]?.[language] ?? key;
 }
 
+
+
 translation_lang_error = translate("translation_lang_error");
 export { translate, availableLanguages };
