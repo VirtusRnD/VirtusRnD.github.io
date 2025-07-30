@@ -19,29 +19,8 @@ import ServicesConsultant from "./pages/servicesConsultant/servicesConsultant.js
 import { translate } from "./components/Translation/Translation";
 
 function App() {
-  const [validURL, setValidURL] = useState(true);
 
-  useEffect(() => {
-    const isValidURL = checkURLValidity();
-
-    setValidURL(isValidURL);
-  }, []);
-
-  const checkURLValidity = () => {
-    const validURLs = [
-      "http://localhost:3000/",
-      "http://localhost:3000/?lang=en",
-      "http://localhost:3000/?lang=tr",
-      "http://localhost:3000/#landing",
-      "http://localhost:3000/#about",
-      "http://localhost:3000/#contact",
-      "https://virtusarge.com/",
-      "https://virtusarge.com/?lang=en",
-      "https://virtusarge.com/?lang=tr",
-    ];
-
-    return validURLs.includes(window.location.href) || window.location.href.startsWith("https://virtusarge.com");
-  };
+ 
 
   useEffect(() => {
     const virtusarge = translate("virtus_arge");
@@ -51,9 +30,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {!validURL ? (
-          <NotFound />
-        ) : (
+        
           <>
             <Navbar />
             <div id="landing">
@@ -94,7 +71,7 @@ function App() {
               <Footer />
             </div>
           </>
-        )}
+        
       </div>
     </Router>
   );

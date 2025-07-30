@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href={`/?lang=${selectedLang}`} className="title">
+      <a href={`/`} className="title">
       <div className="navbar_imgtext" >
   <img src="/virtusrndlogo.png" alt="Virtus Arge Logo" width="18" height="18" style={{ marginRight: '5px' }} />
   <span>{virtusarge}</span>
