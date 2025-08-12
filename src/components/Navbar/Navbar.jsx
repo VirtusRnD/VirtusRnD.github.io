@@ -14,6 +14,12 @@ const Navbar = () => {
   };
 
   const handleLanguageChange = (lang) => {
+    if (lang === "tr") {
+      //türkçe seçilirse ya anasayfaya yönlendiriyoruz ya da langı kaldırıyoruz
+      const url = window.location.origin + window.location.pathname;
+      window.location.href = url;
+      return;
+    }
     setSelectedLang(lang);
     const currentUrl = window.location.href;
     const url = currentUrl.includes("lang=")
